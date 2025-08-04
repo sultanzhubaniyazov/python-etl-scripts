@@ -9,9 +9,7 @@ def classify_score(score):
     elif score > 85:
         return 'Отлично'
 
-mycsv = r"C:\Users\sultan.zhubaniyazov\OneDrive - Freedom Holding Corporation\Рабочий стол\students.csv"
-
-with open(mycsv, "r") as f:
+with open('students.csv', "r") as f:
     reader = csv.reader(f)
     next(reader)
     for row in reader:
